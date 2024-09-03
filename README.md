@@ -51,3 +51,58 @@ export SNOWFLAKE_PASSWORD=your-snowflake-password
 export SNOWFLAKE_WAREHOUSE=your-snowflake-warehouse
 export SNOWFLAKE_ROLE=your-snowflake-role
 export SNOWFLAKE_SCHEMA=your-snowflake-schema
+
+
+🛠️ Setup and Installation
+Clone the repository:
+
+bash
+Copier le code
+git clone https://github.com/yourusername/notion-bot.git
+cd notion-bot
+Install the required Python libraries:
+
+It is recommended to use a virtual environment to manage dependencies:
+
+bash
+Copier le code
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+Configure environment variables:
+As mentioned in the Prerequisites section, ensure the required environment variables are set.
+
+🚀 How to Use
+Once the setup is complete, you can run the scripts. Make sure to have your environment variables set correctly.
+
+▶️ Running the Main Script
+The main.py script is the central piece that processes tasks and recommendations, sending notifications via Slack. To run it:
+
+bash
+Copier le code
+python main.py
+▶️ Running the Recommendation Script
+The reco.py script focuses on processing recommendations from Notion, sending reminders for overdue tasks and owner-less cards.
+
+bash
+Copier le code
+python reco.py
+▶️ Running the Requete Script
+The requete.py script handles the connection to Snowflake and executes SQL queries to retrieve data from your Notion tasks and recommendations.
+
+bash
+Copier le code
+python requete.py
+🗂 Project Structure
+The project is organized as follows:
+
+bash
+Copier le code
+├── main.py          # Main script to process tasks and send reminders
+├── reco.py          # Script to process recommendations
+├── requete.py       # Script to connect to Snowflake and execute queries
+├── README.md        # This README file
+├── requirements.txt # List of dependencies to install
+🤝 Contributing
+If you'd like to contribute to this project, please submit a pull request or open an issue for discussion. Contributions are welcome!
+

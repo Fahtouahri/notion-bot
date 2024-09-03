@@ -60,3 +60,11 @@ export SNOWFLAKE_SCHEMA=your-snowflake-schema
    git clone https://github.com/yourusername/notion-bot.git
    cd notion-bot
 
+2. **Install the required Python libraries:**
+  python3 -m venv env
+  source env/bin/activate
+  pip install -r requirements.txt
+
+
+
+
